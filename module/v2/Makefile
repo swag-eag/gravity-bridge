@@ -3,7 +3,7 @@ VERSION := $(shell git describe --abbrev=6 --dirty --always --tags)
 COMMIT := $(shell git log -1 --format='%H')
 DOCKER := $(shell which docker)
 DOCKER_BUF := $(DOCKER) run --rm -v $(CURDIR):/workspace --workdir /workspace bufbuild/buf
-HTTPS_GIT := https://github.com/crypto-org-chain/gravity-bridge.git
+HTTPS_GIT := https://github.com/swag-eag/gravity-bridge.git
 COVERAGE ?= coverage.txt
 PROJECT_NAME = $(shell git remote get-url origin | xargs basename -s .git)
 
